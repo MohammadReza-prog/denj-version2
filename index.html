@@ -715,6 +715,10 @@
           <a class="nav-link nav-link-goldoon" href="#about">درباره ما</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link nav-link-goldoon" href="#gallery">گالری</a>
+        </li>
+        
+        <li class="nav-item">
           <a class="nav-link nav-link-goldoon" href="#comments">نظرات شما</a>
         </li>
       </ul>
@@ -744,6 +748,8 @@
     <li><a href="#" class="vertical-nav-link active"><i class="fas fa-home"></i><span>خانه</span></a></li>
     <li><a href="#menu" class="vertical-nav-link"><i class="fas fa-utensils"></i><span>منو</span></a></li>
     <li><a href="#about" class="vertical-nav-link"><i class="fas fa-info-circle"></i><span>درباره ما</span></a></li>
+    <li><a href="#gallery" class="vertical-nav-link"><i class="fa-solid fa-image"></i><span>گالری</span></a></li>
+
     <li><a href="#comments" class="vertical-nav-link"><i class="fas fa-comment"></i><span>نظرات</span></a></li>
     <!-- <li><a href="#" class="vertical-nav-link order-btn"><i class="fas fa-shopping-bag"></i><span>سفارش</span></a></li> -->
   </ul>
@@ -1086,7 +1092,103 @@
         </div>
       </div>
     </div>
+  <!-- گالری استوری کافه -->
+
   </section>
+  <section id="gallery" class="py-5 wow animate__animated animate__fadeInUp">
+  <div class="container">
+    <h2 class="text-center mb-5 fw-bold">گالری کافه دنج</h2>
+    
+    <div class="gallery-container">
+      <!-- کاروسل استوری -->
+      <div id="storyGallery" class="carousel slide story-carousel" data-bs-ride="carousel">
+        <!-- اندیکاتورها -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#storyGallery" data-bs-slide-to="0" class="active" aria-current="true"></button>
+          <button type="button" data-bs-target="#storyGallery" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#storyGallery" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#storyGallery" data-bs-slide-to="3"></button>
+        </div>
+        
+        <!-- اسلایدهای استوری -->
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <div class="story-frame">
+              <img src="picture/carusel-item1.jpg" class="d-block w-100" alt="فضای داخلی کافه">
+              <div class="story-caption">
+                <h5>فضای دنج و آرام</h5>
+                <p>طراحی مدرن با حفظ حس گرم و صمیمی</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <div class="story-frame">
+              <img src="picture/carusel-item2.jpg" class="d-block w-100" alt="منوی کافه">
+              <div class="story-caption">
+                <h5>منوی متنوع</h5>
+                <p>تنوع بی‌نظیر در نوشیدنی‌ها و غذاها</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <div class="story-frame">
+              <img src="picture/carusel-item3.jpg" class="d-block w-100" alt="فضای بیرونی">
+              <div class="story-caption">
+                <h5>محیطی برای دورهمی‌ها</h5>
+                <p>مکانی مناسب برای گردهمایی‌های دوستانه</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <div class="story-frame">
+              <img src="picture/carusel-item4.jpg" class="d-block w-100" alt="موزیک زنده">
+              <div class="story-caption">
+                <h5>برنامه‌های ویژه</h5>
+                <p>اجرای موسیقی زنده در برخی شب‌ها</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- دکمه‌های کنترل -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#storyGallery" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">قبلی</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#storyGallery" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">بعدی</span>
+        </button>
+      </div>
+      
+      <!-- گالری کوچک زیر کاروسل -->
+      <div class="story-thumbnails mt-4">
+        <div class="row g-3">
+          <div class="col-6 col-md-3">
+            <div class="story-thumb active" data-bs-target="#storyGallery" data-bs-slide-to="0">
+              <img src="picture/carusel-item1.jpg" class="img-fluid" alt="تصویر کوچک 1">
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="story-thumb" data-bs-target="#storyGallery" data-bs-slide-to="1">
+              <img src="picture/carusel-item2.jpg" class="img-fluid" alt="تصویر کوچک 2">
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="story-thumb" data-bs-target="#storyGallery" data-bs-slide-to="2">
+              <img src="picture/carusel-item3.jpg" class="img-fluid" alt="تصویر کوچک 3">
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="story-thumb" data-bs-target="#storyGallery" data-bs-slide-to="3">
+              <img src="picture/carusel-item4.jpg" class="img-fluid" alt="تصویر کوچک 4">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
   <!-- نظرات و فرم ارسال نظر با تم قهوه‌ای -->
@@ -1188,6 +1290,7 @@
           <li><a href="#" class="footer-link">خانه</a></li>
           <li><a href="#menu" class="footer-link">منو</a></li>
           <li><a href="#about" class="footer-link">درباره ما</a></li>
+          <li><a href="#gallery" class="footer-link">گالری</a></li>
           <li><a href="#comments" class="footer-link">نظرات شما</a></li>
 
         </ul>
@@ -1541,6 +1644,80 @@ document.querySelectorAll('.navbar-collapse .nav-link').forEach(link => {
     document.querySelector(".coffee-loader").style.display = "none";
   });
 </script>
+<script>
+// فعال کردن گالری استوری پس از لود کامل صفحه
+document.addEventListener('DOMContentLoaded', function() {
+  // مقداردهی اولیه کاروسل
+  const storyCarousel = new bootstrap.Carousel(document.getElementById('storyGallery'), {
+    interval: 5000,
+    wrap: true,
+    keyboard: true,
+    pause: 'hover'
+  });
+
+  // تغییر خودکار thumbnail ها با اسلایدها
+  document.getElementById('storyGallery').addEventListener('slid.bs.carousel', function(event) {
+    const activeIndex = event.to;
+    const thumbs = document.querySelectorAll('.story-thumb');
+    
+    thumbs.forEach((thumb, index) => {
+      if (index === activeIndex) {
+        thumb.classList.add('active');
+      } else {
+        thumb.classList.remove('active');
+      }
+    });
+  });
+
+  // افزودن swipe برای موبایل
+  let touchStartX = 0;
+  let touchEndX = 0;
+  const carouselElement = document.querySelector('.story-carousel');
+  
+  carouselElement.addEventListener('touchstart', function(e) {
+    touchStartX = e.changedTouches[0].clientX;
+  }, {passive: true});
+  
+  carouselElement.addEventListener('touchend', function(e) {
+    touchEndX = e.changedTouches[0].clientX;
+    handleSwipe();
+  }, {passive: true});
+  
+  function handleSwipe() {
+    const threshold = 50;
+    
+    if (touchEndX < touchStartX - threshold) {
+      storyCarousel.next();
+    } else if (touchEndX > touchStartX + threshold) {
+      storyCarousel.prev();
+    }
+  }
+
+  // کلیک روی thumbnail ها
+  document.querySelectorAll('.story-thumb').forEach(thumb => {
+    thumb.addEventListener('click', function() {
+      const slideTo = this.getAttribute('data-bs-slide-to');
+      storyCarousel.to(slideTo);
+    });
+  });
+
+  // حل مشکل لود تصاویر
+  window.addEventListener('load', function() {
+    const images = document.querySelectorAll('.story-frame img, .story-thumb img');
+    images.forEach(img => {
+      if (!img.complete || img.naturalWidth === 0) {
+        img.style.display = 'none';
+        const fallback = document.createElement('div');
+        fallback.className = 'image-fallback';
+        fallback.innerHTML = '<i class="fas fa-image"></i>';
+        img.parentNode.insertBefore(fallback, img.nextSibling);
+      }
+    });
+  });
+});
+  
+</script>
+
 
 <script>
     

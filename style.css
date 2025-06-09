@@ -624,3 +624,284 @@ body {
   font-size: 18px;
   color: #fff;
 }
+
+/* استایل‌های اصلی گالری استوری */
+.gallery-container {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.story-carousel {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(58, 37, 18, 0.2);
+  background: #000;
+  position: relative;
+}
+
+.carousel-inner {
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-item {
+  height: 80vh;
+  min-height: 500px;
+  max-height: 600px;
+  background: #000;
+}
+
+.story-frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.story-frame img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.5s ease;
+}
+
+@media (max-width: 768px) {
+  .story-frame img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.story-caption {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(58, 37, 18, 0.7);
+  border-radius: 10px;
+  padding: 15px 25px;
+  text-align: center;
+  width: 80%;
+  max-width: 500px;
+  z-index: 10;
+  color: white;
+}
+
+.story-caption h5 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--secondary-color);
+}
+
+.story-caption p {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+/* اندیکاتورها */
+.carousel-indicators {
+  bottom: 20px;
+  margin: 0;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 6px;
+  background-color: var(--secondary-color);
+  opacity: 0.5;
+  transition: all 0.3s;
+  border: none;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+  transform: scale(1.3);
+}
+
+/* دکمه‌های کنترل */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 15%;
+  opacity: 0.7;
+  transition: all 0.3s;
+  z-index: 11;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  background-size: 50%;
+}
+
+/* گالری کوچک */
+.story-thumbnails {
+  padding: 0 15px;
+}
+
+.story-thumb {
+  position: relative;
+  height: 0;
+  padding-bottom: 177.78%; /* نسبت 9:16 */
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 3px solid transparent;
+  transition: all 0.3s;
+}
+
+.story-thumb img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.story-thumb:hover,
+.story-thumb.active {
+  border-color: var(--primary-color);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(111, 78, 55, 0.4);
+}
+
+/* رسپانسیو */
+@media (max-width: 992px) {
+  .carousel-item {
+    height: 85vh;
+    min-height: 400px;
+  }
+  
+  .story-caption {
+    bottom: 10%;
+    padding: 10px 15px;
+  }
+  
+  .story-caption h5 {
+    font-size: 1.2rem;
+  }
+  
+  .story-caption p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 90vh;
+    min-height: 350px;
+  }
+  
+  .story-caption {
+    width: 90%;
+    padding: 8px 12px;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-item {
+    min-height: 300px;
+    height: 95vh;
+  }
+  
+  .story-caption {
+    bottom: 5%;
+  }
+  
+  .story-caption h5 {
+    font-size: 1rem;
+  }
+  
+  .story-caption p {
+    font-size: 0.8rem;
+  }
+  
+  .story-thumb {
+    border-width: 2px;
+  }
+}
+/* استایل پایه بخش نظرات */
+.comments-section {
+  transition: all 0.5s ease;
+}
+
+/* حالت لایت */
+.comments-list,
+.comment-form .card {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+}
+
+.comment-form input,
+.comment-form textarea {
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  border: 1px solid var(--input-border);
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* حالت دارک */
+[data-theme="dark"] .comments-list,
+[data-theme="dark"] .comment-form .card {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+}
+
+[data-theme="dark"] .comment-form input,
+[data-theme="dark"] .comment-form textarea {
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  border-color: var(--input-border);
+}
+
+[data-theme="dark"] .user-avatar {
+  background-color: var(--secondary-color);
+}
+
+/* دکمه ارسال نظر */
+.comment-form button {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  transition: all 0.3s;
+}
+
+.comment-form button:hover {
+  background: var(--secondary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
